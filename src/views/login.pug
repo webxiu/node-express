@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")  
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        //- link(rel="stylesheet",type="text/css" href="index.css")
+        //- script(src="one.js" type="text/javascript")
+        style.
+            .mydiv{
+                width:200px;
+                height:200px;
+                background:red;
+            } 
+    body
+        //- 公共模板哪里需要哪里引入
+        include ./common/common.pug
+        h1 我是标题
+        div 我说一个div
+        div(class="mydiv") 我是类名为mydiv的    ===#{msg}===#{data.name}
+        .mydiv2(style={width:"100px",height:"100px",background:"yellow"}) 我是第二个div 这种只适用于div
+        p 我说p标签
+        .my 我也是一个p
+
+
+        
